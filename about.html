@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="pacboystyle.css">
+	<title>Pacboy</title>
+</head>
+<body>
+	<h1 id="title">Pacboy</h1>
+	<br>
+	<nav>
+		<table class="buttonbar">
+			<tr>
+				<td><a href="index.html">Info</a></td>
+				<td><a href="pacboy.html">Play</a></td>
+				<td><a href="theme.html">Theme</a></td>
+				<th>About</th>
+		</table>
+	</nav>
+	<section class="textblock">
+		<h2>About me</h2>
+		<p>My name is Cameron Armstrong and I am a student at the University of Western Australia
+		with student ID 21194619. I am majoring in computer science.</p>
+		<br>
+		<p>This game of Pacboy was created for my project in the unit CITS3403 Agile Web Development.</p>
+	</section>
+	<section class="textblock">
+		<h2>References</h2>
+		<ul>
+			<li>All music and sound effects were taken from the videogame Pacmania for Commodore Amiga 
+			500 released by Namco in 1987.</li>
+			<li>Game loop code was based off <a href="https://www.youtube.com/watch?v=uU5YPIvJ24Y">this 
+			tutorial video</a>.</li>
+			<li>Code for swipe gestures for mobile devices obtained from 
+			<a href="http://stackoverflow.com/questions/2264072/detect-a-finger-swipe-through-javascript-on-the-iphone-and-android">here</a>.</li>
+		</ul>
+	</section>
+	<footer>
+		<h4>Current time: <span id="currenttime"></span></h4>
+		<h4>Last modified: <span id="lastmodified"></span></h4>
+		<script>
+			var currentTime = new Date();
+			document.getElementById("currenttime").innerHTML = currentTime.toLocaleString();
+			var modified = document.lastModified;
+			document.getElementById("lastmodified").innerHTML = new Date(modified).toLocaleString();
+		</script>
+	</footer>
+</body>
+</html>

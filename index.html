@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="pacboystyle.css">
+	<title>Pacboy</title>
+</head>
+<body>
+	<h1 id="title">Pacboy</h1>
+	<br>
+	<nav>
+		<table class="buttonbar">
+			<tr>
+				<th>Info</th>
+				<td><a href="pacboy.html">Play</a></td>
+				<td><a href="theme.html">Theme</a></td>
+				<td><a href="about.html">About</a></td>
+		</table>
+	</nav>
+	<section class="textblock">
+		<h2>Info</h2>
+		<p>This is a Pacman inspired game developed by myself for CITS3402 Agile Web Development at the University of Western Australia.</p><br>
+		<p>Your aim is to collect all the pellets and not be touched by an enemy. You can disable enemies by touching them when they are in a vulnerable state
+	(if you collect a super pellet) or by shooting them with a weapon.</p><br>
+		<p>The controls are:</p>
+		<ul>
+			<li>UP</li>
+			<li>DOWN</li>
+			<li>LEFT</li>
+			<li>RIGHT</li>
+			<li>SPACE (SHOOT) **Not working yet**</li>
+		</ul>
+	</section>
+	<footer>
+		<h4>Current time: <span id="currenttime"></span></h4>
+		<h4>Last modified: <span id="lastmodified"></span></h4>
+		<script>
+			var currentTime = new Date();
+			document.getElementById("currenttime").innerHTML = currentTime.toLocaleString();
+			var modified = document.lastModified;
+			document.getElementById("lastmodified").innerHTML = new Date(modified).toLocaleString();
+		</script>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="pacboystyle.css">
+	<title>Pacboy</title>
+</head>
+<body>
+	<h1 id="title">Pacboy</h1>
+	<br>
+	<nav>
+		<table class="buttonbar">
+			<tr>
+				<td><a href="index.html">Info</a></td>
+				<td><a href="pacboy.html">Play</a></td>
+				<th>Theme</th>
+				<td><a href="about.html">About</a></td>
+		</table>
+	</nav>
+	<section class="textblock">
+		<h2>Theme</h2>
+		<p>The theme I designed for this website was designed to fit well with the Pacboy game.
+		The background is black just like the background in the game and the colours white, blue, yellow
+		and orange are all used in the game.</p>
+		<br>
+		<p>I set the bulletpoint image in unordered lists to an image of Pacboy.</p>
+	</section>
+	<footer>
+		<h4>Current time: <span id="currenttime"></span></h4>
+		<h4>Last modified: <span id="lastmodified"></span></h4>
+		<script>
+			var currentTime = new Date();
+			document.getElementById("currenttime").innerHTML = currentTime.toLocaleString();
+			var modified = document.lastModified;
+			document.getElementById("lastmodified").innerHTML = new Date(modified).toLocaleString();
+		</script>
+	</footer>
+</body>
+</html>
